@@ -1,0 +1,47 @@
+$color1: #4A6D72
+$color2: #00BCD4
+
+
+  
+
+ul
+  float: right
+
+li
+  display: inline-block
+  padding: 1rem 1.5rem
+
+a
+  text-decoration: none
+  position: relative
+  font-size: 1.4rem
+  font-weight: 600
+  color: $color1
+  font-family: Helvetica, sans-serif
+  &.active
+    color: $color2
+    // border-bottom: solid 3px
+  &:hover
+    color: $color2
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 3px
+    background-color: $color2
+    transform: scaleX(0)
+    visibility: hidden
+    transition: 0.25s
+  &:hover:before
+    visibility: visible
+    transform: scaleX(1)
+
+    
+@media (max-width: 640px)
+  li
+    display: block
+
+	
+  
