@@ -1,3 +1,3 @@
 # Menu
 Simple menu (Pug, Sass, Gulp)
-http://codepen.io/ilay/pen/xqZdqM?editors=1100
+https://codepen.io/ilay/full/xqZdqM
